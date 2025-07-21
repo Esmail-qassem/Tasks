@@ -6,3 +6,5 @@
 - and std::function
 - the sequencer object has an add function that adds each task -
 - the main function should have a while loop  { seq::run(); }
+
+![alt text](image.png)
