@@ -2,17 +2,17 @@
 #include <iostream>
 #include <queue>
 #include <vector>
-
+#include <functional>
 class Task
 {
 private:
 	int Task_ID;
 	int Priority;
-	
+    std::function<void()> funcPtr;
 
 public:
 	Task();
-	Task(int Task, int Prio);
+	 Task(int Task, int Prio, std::function<void()> ptr);
     int Get_Priority(void) const
     {
         return Priority;
